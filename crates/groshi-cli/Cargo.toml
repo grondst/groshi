@@ -1,0 +1,24 @@
+[package]
+name = "groshi-cli"
+description = "Command-line interface for groshi"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+readme.workspace = true
+repository.workspace = true
+publish.workspace = true
+
+[[bin]]
+name = "groshi"
+path = "src/main.rs"
+
+[dependencies]
+groshi-core.workspace = true
+clap.workspace = true
+tokio.workspace = true
+comfy-table.workspace = true
+chrono.workspace = true
+
+[lints]
+workspace = true
